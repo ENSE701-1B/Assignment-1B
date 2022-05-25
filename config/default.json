@@ -1,4 +1,4 @@
 {
     "mongoURI" : 
-    "mongodb+srv://xwg1585:ws88888@ense701a1worksheet3.ydvi5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    "mongodb://Derrick:XRY1998127@cluster0-shard-00-00.8ipvz.mongodb.net:27017,cluster0-shard-00-01.8ipvz.mongodb.net:27017,cluster0-shard-00-02.8ipvz.mongodb.net:27017/?ssl=true&replicaSet=atlas-mgii5y-shard-0&authSource=admin&retryWrites=true&w=majority"
   }
