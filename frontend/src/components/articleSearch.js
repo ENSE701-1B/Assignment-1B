@@ -1,18 +1,23 @@
 import React, { Component } from "react";
 import "../App.css";
+import axios from "axios";
 
 class search extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      searchQuery: "",
+      search: "",
     };
   }
   //handler for Search Bar
-  handleInputChanged(event) {
+  handleInputSearch(event) {
     this.setState({
-      searchQuery: event.target.value,
+      search: event.target.value,
     });
+  }
+
+  onSearch(event){
+    event.preventDefault();
   }
   render() {
     return (
@@ -31,7 +36,7 @@ class search extends Component {
           <label>Please Input the Article's Title: </label>
           <input  
           className="textbox" 
-          onChange={this.handleInputChanged.bind(this)} 
+          onChange={this.handleInputSearch.bind(this)} 
            />
         </div>
         <div>
