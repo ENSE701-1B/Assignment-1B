@@ -1,6 +1,8 @@
-# CISE_ass1b
-To markers:
-Please be aware that the web app is working on Heroku, if you `npm start` the app first locally (`heroku local web` also works fine). Then you can view the 
-submissions content on the web app. Otherwise, there won't be any content inside the table.
+# ENSE 701_ass1b
+Include the following Tutor Emails in your team work story board (eg Trello) and team GitHub repository 
 
+kaushik.chowdhury@aut.ac.nz
 
+tony.clear@aut.ac.nz 
+
+ivan.yang@aut.ac.nz
