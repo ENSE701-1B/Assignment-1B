@@ -17,9 +17,7 @@ const SubmissionForm = () => {
 
     if (basicDOIpattern.test(string)) {
       return true;
-    } else {
-      return false;
-    }
+    } return true;
   };
 
   let checkTitle = (title) => {
