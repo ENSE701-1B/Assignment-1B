@@ -86,15 +86,6 @@ router.delete("/", async (req, res) => {
     .then(res.send("deletions successful"))
     .catch((error) => console.log(error));
 })
-//findOneAndDelete({ _id: id}) = findByIdAndDelete(id)
-
-// router.delete("/", async (req, res) => {
-//   Article.remove({}, (err, art) => {
-//     if (err) console.log("delete all not successful");
-//     else console.log("delete all successful");
-//   });
-// });
-
 
 router.post("/", async (req, res) => {
   console.log("posting new article");
