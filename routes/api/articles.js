@@ -64,21 +64,6 @@ router.put("/:id", async (req, res, next) =>{
 
 })
 
-// router.put("/:id", (req, res, next) => {
-//   User.findById(req.params.id)
-//     .then((user) => user.update(req.body))
-//     .then((updated) => res.status(201).json(updated))
-//     .catch(next);
-// });
-// router.get("/:id", async (req, res) => {
-//   console.log("finding...");
-
-//   Article.findById(req.params.id, (err, doc) =>{
-//     if (err) console.log(err);
-//     else res.json(doc);
-//   });
-// });
-
 router.delete("/", async (req, res) => {
   console.log("deleting");
   
@@ -86,15 +71,6 @@ router.delete("/", async (req, res) => {
     .then(res.send("deletions successful"))
     .catch((error) => console.log(error));
 })
-//findOneAndDelete({ _id: id}) = findByIdAndDelete(id)
-
-// router.delete("/", async (req, res) => {
-//   Article.remove({}, (err, art) => {
-//     if (err) console.log("delete all not successful");
-//     else console.log("delete all successful");
-//   });
-// });
-
 
 router.post("/", async (req, res) => {
   console.log("posting new article");
