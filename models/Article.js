@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 const ArticleSchema = new mongoose.Schema({
-  
   cat: {
     type: String,
   },
@@ -37,5 +36,4 @@ const ArticleSchema = new mongoose.Schema({
     default: Date.now
   }
 });
-
 module.exports = Article = mongoose.model("article", ArticleSchema);
