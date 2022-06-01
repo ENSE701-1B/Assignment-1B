@@ -64,21 +64,6 @@ router.put("/:id", async (req, res, next) =>{
 
 })
 
-// router.put("/:id", (req, res, next) => {
-//   User.findById(req.params.id)
-//     .then((user) => user.update(req.body))
-//     .then((updated) => res.status(201).json(updated))
-//     .catch(next);
-// });
-// router.get("/:id", async (req, res) => {
-//   console.log("finding...");
-
-//   Article.findById(req.params.id, (err, doc) =>{
-//     if (err) console.log(err);
-//     else res.json(doc);
-//   });
-// });
-
 router.delete("/", async (req, res) => {
   console.log("deleting");
   
