@@ -246,7 +246,9 @@ class TableTemplate extends Component {
 
         return;
       }
-    } else return;
+    } else {
+      return;
+    }
 
     let dataRef = this.state.data;
 
@@ -255,9 +257,10 @@ class TableTemplate extends Component {
       console.log(fieldsToUpdate.analysed);
       console.log(fieldsToUpdate.claim);
             console.log(fieldsToUpdate.evidence);
-      if (dataRef[idx]["_id"] === null || dataRef[idx]["_id"]){
+
+      if (dataRef[idx]["_id"] === null || dataRef[idx]["_id"] === ""){
         //this article cannot be submitted because its _id is not found
-        //alert("Internal error: id not found");
+        alert("Internal error: id not found");
         return;
       }
         axios
