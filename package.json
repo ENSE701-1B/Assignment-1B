@@ -8,7 +8,7 @@
     "app": "node index.js",
     "app:dev": "nodemon index.js",
     "build": "cd frontend && npm run build",
-    "install-client": "cd frontend && npm install",
+    "install-client": "cd frontend && npm install --force",
     "heroku-postbuild": "npm run install-client && npm run build",
     "develop": "concurrently --kill-others-on-fail \"npm run app\" \"npm run start --prefix frontend\"",
     "start": "concurrently --kill-others-on-fail \"npm run app\" \"npm run start --prefix frontend\"",
