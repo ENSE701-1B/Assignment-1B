@@ -1,14 +1,17 @@
 body {
-  background-color: #ffcc00;
+  background: linear-gradient(to right, rgb(201, 214, 255), rgb(226, 226, 226)); 
   padding: 20px;
-  margin: 0;
+  margin: auto;
+  width: 60%;
 }
 h1,
 h2,
 p,
 ul,
 li {
-  font-family: consolas;
+  /* font-family: consolas; */
+  font-family: Tahoma;
+
 }
 ul.header li {
   display: inline;
@@ -16,7 +19,9 @@ ul.header li {
   margin: 0;
 }
 ul.header {
-  background-color: #111;
+  
+  background-color:#adc7f5;
+  border-radius: 30px;
   padding: 0;
 }
 ul.header li a {
@@ -27,7 +32,9 @@ ul.header li a {
   display: inline-block;
 }
 .content {
-  background-color: #fff;
+  background: linear-gradient(to left top, rgb(127, 127, 213), rgb(134, 168, 231), rgb(145, 234, 228));      
+
+  border-radius: 30px;
   padding: 20px;
 }
 .content h2 {
@@ -37,10 +44,47 @@ ul.header li a {
 .content li {
   margin-bottom: 10px;
 }
+.content button{
+  border-width: 0;
+  border-radius: 5px;
+}
+.main{
+  width: 60%;
+  margin: auto;
+
+}
+.home{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: auto;
+}
+
+.card{
+  margin: 20px;
+  grid-auto-flow: row;
+  height: 200px;
+  width: 90%;
+  background-color: blueviolet;
+  border-radius: 30px;
+  text-align: center;
+  background: linear-gradient(to right bottom, rgb(116, 235, 213), rgb(172, 182, 229), rgb(134, 168, 231)); 
+  background: linear-gradient(to right bottom, rgb(201, 214, 255), rgb(226, 226, 226)); 
+
+  /* background: linear-gradient(to left top, rgb(127, 127, 213), rgb(134, 168, 231), rgb(145, 234, 228)); */
+ display: flex;
+}
+
+.card p{
+  float: left;
+  vertical-align: middle;
+  margin: auto;
+  width: 50%;
+}
+
 /* highlights whichever route link is active so the menu indicates 
 which menu item was last clicked
 */
-
 .active {
-  background-color: green;
+  border-radius: 25px;
+  background-color: #a6e3e9;
 }
