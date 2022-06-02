@@ -6,7 +6,7 @@ var cors = require("cors");
 const app = express();
 const articles = require("./routes/api/articles");
 const bodyParser = require("body-parser");
-
+const path = require('path');
 //maybe not
 require("./models/Article");
 require("./routes/api/articles.js");
